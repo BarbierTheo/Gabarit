@@ -1,97 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-
-    display: flex;
-    flex-grow: 1;
-
+  flex-direction: row;
+  display: flex;
+  flex-grow: 1;
 }
 
 section {
-
-    background-color: #ff69b4;
-    flex-grow: 1;
-    border-radius: 0.5rem;
-    margin: 0.2rem;
-    color: white;
-    font-family: fantasy, sans-serif;
-    line-height: 2rem;
-    padding: 1rem;
+  background-color: #ff69b4;
+  flex-grow: 1;
+  border-radius: 0.5rem;
+  margin: 0.2rem;
+  color: white;
+  font-family: fantasy, sans-serif;
+  line-height: 2rem;
+  padding: 1rem;
 }
 
-h2{
-    margin: 1rem 0 0 1rem;
+h2 {
+  margin: 0;
 }
 /*flex du centre */
 
 header {
-
-    background-color: #6495ed;
-    border-radius: 0.5rem;
-    margin: 0.2rem;
-    padding: 2rem;
-
+  background-color: #6495ed;
+  border-radius: 0.5rem;
+  margin: 0.2rem;
+  padding: 2rem;
 }
 
 /* flex du haut */
 
 footer {
-
-    display: flex;
-    background-color: #228b22;
-    border-radius: 0.5rem;
-    margin: 0.2rem;
-    color: white;
-    justify-content: center;
-    font-family: fantasy, sans-serif;
-    padding: 1.5rem;
-
+  background-color: #228b22;
+  border-radius: 0.5rem;
+  margin: 0.2rem;
+  color: white;
+  text-align: center;
+  font-family: fantasy, sans-serif;
+  padding: 1.5rem;
 }
 
 /*flex du bas*/
 
-
 nav {
-    background-color: orange;
-    border-radius: 0.5rem;
-    order: -1;
-    margin: 0.2rem;
-    flex-grow: 0.2;
-    padding: 1rem;
-
+  background-color: orange;
+  border-radius: 0.5rem;
+  order: -1;
+  margin: 0.2rem;
+  flex-grow: 0.2;
+  padding: 1rem;
 }
 
-nav>ul>li {
-    color: white;
-    font-family: fantasy, sans-serif;
-    font-weight: bold;
-    line-height: 2rem;
+nav > ul > li {
+  color: white;
+  font-family: fantasy, sans-serif;
+  font-weight: bold;
+  line-height: 2rem;
 }
 
 /* flex de gauche */
 
 h1 {
-    color: white;
-    text-align: center;
-    font-family: fantasy, sans-serif;
+  color: white;
+  text-align: center;
+  font-family: fantasy, sans-serif;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-hr{
-    color: white;
-    margin: 0.5rem;
-    opacity: 30%;
+hr {
+  color: white;
+  margin: 0.5rem;
+  opacity: 30%;
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
 }
